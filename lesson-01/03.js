@@ -5,4 +5,11 @@
 */
 
 // your code
-let sum
+let sum = 0;
+  let n = 1;
+  while (n < 21) {
+    if(n % 2 === 1) {
+    sum = sum + n
+    }
+    n = n + 1
+  }

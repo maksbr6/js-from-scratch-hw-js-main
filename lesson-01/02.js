@@ -6,4 +6,7 @@
 */
 
 // your code
-let factorial
+let factorial = 1;
+while (n < 10) {
+  n = n * (n+1)
+}
