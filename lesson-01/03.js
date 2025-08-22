@@ -13,3 +13,4 @@ let sum = 0;
     }
     n = n + 1
   }
+console.log(sum);
