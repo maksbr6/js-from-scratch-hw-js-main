@@ -14,12 +14,15 @@
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
+const { includesElement } = require('./01.js');
+array = [1, 2, 3, 2, 1, 4]
+
 function findUniqueElements(array) {
-    let arrayWithUniqueElements = massive
-    for (let i = array.length-1; i >= 0; i--) {
-            if (array.indexOf(array[i]) != i) {
-                arrayWithUniqueElements.splice(i, 1)
-            }
+    let  massiveWithUniqueElements = [array[0]]
+    for (let i = 1; i <array.length; i++) {
+        if (includesElement(massiveWithUniqueElements, array[i]) === false) {
+            massiveWithUniqueElements.push(array[i])
+        }  
     }
-    return arrayWithUniqueElements
+    return massiveWithUniqueElements
 }
