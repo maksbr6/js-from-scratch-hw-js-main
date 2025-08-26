@@ -15,7 +15,6 @@
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 const { includesElement } = require('./01.js');
-array = [1, 2, 3, 2, 1, 4]
 
 function findUniqueElements(array) {
     let  massiveWithUniqueElements = [array[0]]
