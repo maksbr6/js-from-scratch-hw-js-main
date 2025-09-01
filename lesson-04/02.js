@@ -17,12 +17,16 @@
 
 function findUniqueElements(array) {
     let  massiveWithUniqueElements = [array[0]]
+     if (array = []) {
+        massiveWithUniqueElements = array 
+    }
     for (let i = 1; i <array.length; i++) {
         if (includesElement(massiveWithUniqueElements, array[i]) === false) {
             massiveWithUniqueElements.push(array[i])
         }  
     }
     return massiveWithUniqueElements
+   
 }
 function includesElement(array, element) {
     let isElementInArray = false
@@ -33,3 +37,5 @@ function includesElement(array, element) {
     }
     return isElementInArray
 }
+
+console.log(findUniqueElements([]));
