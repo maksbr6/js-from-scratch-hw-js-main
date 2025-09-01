@@ -16,7 +16,6 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
-const { includesElement } = require('./01.js');
 
 function findCommonElements(array1, array2) {
     let massiveWithMatchingElements = []
@@ -25,4 +24,13 @@ function findCommonElements(array1, array2) {
             massiveWithMatchingElements.push(array1[i])
         }
     }   return massiveWithMatchingElements
+}
+function includesElement(array, element) {
+    let isElementInArray = false
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === element) {
+            isElementInArray = true
+        }
+    }
+    return isElementInArray
 }

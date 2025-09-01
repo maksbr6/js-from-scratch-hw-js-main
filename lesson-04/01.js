@@ -21,4 +21,3 @@ function includesElement(array, element) {
     }
     return isElementInArray
 }
-module.exports = { includesElement };
