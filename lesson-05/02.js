@@ -36,13 +36,5 @@ const gallery = {
 }
 
 function updateGallery(galleryObject, nameOfArtWork, newStatus) {
-  for (const key in gallery) {
-    if (galleryObject === gallery && key === nameOfArtWork) {
-      gallery[key] = newStatus
-    } else {
-      if (galleryObject === gallery) {
-        gallery[nameOfArtWork] = newStatus
-      }
-    }
-  }
+  galleryObject[nameOfArtWork] = newStatus
 }
