@@ -17,7 +17,7 @@
 
 function findUniqueElements(array) {
     let  massiveWithUniqueElements = [array[0]]
-     if (array = []) {
+     if (array.length === 0) {
         massiveWithUniqueElements = array 
     }
     for (let i = 1; i <array.length; i++) {
